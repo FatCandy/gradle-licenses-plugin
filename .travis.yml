@@ -26,6 +26,7 @@ script:
   - ./gradlew build check
 deploy:
   provider: bintray
+  on: deploy
   file: "descriptor.json"
   user: $BINTRAY_API_KEY
   key: $BINTRAY_API_USER
