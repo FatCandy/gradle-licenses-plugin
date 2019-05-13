@@ -1,0 +1,19 @@
+{
+  "package": {
+    "name": "gradle-licenses-plugin",
+    "repo": "maven",
+    "subject": "fatcandy",
+    "vcs_url": "https://github.com/FatCandy/gradle-licenses-plugin",
+    "licenses": ["Apache-2.0"]
+  },
+
+  "version": {
+    "name": "1.0"
+  },
+
+  "files":
+  [
+    {"includePattern": "build/libs/(.*)", "uploadPattern": "/$1"}
+  ],
+  "publish": true
+}

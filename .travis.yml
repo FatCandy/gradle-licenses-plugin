@@ -24,3 +24,9 @@ before_script:
   - cp ./licenses/* "$ANDROID_HOME/licenses/"
 script:
   - ./gradlew build check
+deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: $BINTRAY_API_KEY
+  key: $BINTRAY_API_USER
+  skip_cleanup: true
